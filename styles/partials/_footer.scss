@@ -1,0 +1,70 @@
+.footer {
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 150px;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+
+        &-logo {
+
+            &-icon {
+                padding-bottom: 0;
+
+                img {
+                    height: 60px;
+                }
+            }
+
+            &-socials {
+                img {
+                    height: 30px;
+                    padding: 10px 0 20px 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &-hiretalent {
+            p {
+                color: $secondary;
+                font-weight: 600;
+                padding-left: 40px;
+            }
+
+            ul {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #3359DF;
+                    letter-spacing: 0.5px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        padding: 0 150px;
+        align-items: center;
+        margin-top: 50px;
+        width: 80%;
+
+        p {
+
+            color: $secondary;
+            width: 40%;
+        }
+
+        a {
+            text-decoration: none;
+            padding-right: 30px;
+            color: $secondary;
+        }
+    }
+}
